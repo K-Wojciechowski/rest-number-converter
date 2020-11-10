@@ -1,0 +1,6 @@
+This is the REST Number Converter.
+
+The service offers one route (via GET): `/convert/{to}/{number}`.
+Use `hex` or `roman` as the `to` parameter. The `number` parameter supports the same numbers Java's `long` supports, i.e. -2^63 ... 2^63-1 for `hex`, and 1 ... 3999 for `roman`. `hex` represents negative numbers in two's complement.
+
+The service will return either the converted number in a 200 response, or an error (text description, error code).
